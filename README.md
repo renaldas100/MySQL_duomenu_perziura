@@ -29,3 +29,9 @@ Iš atlyginimo suskaičiuotos darbuotojo darbo vietos sąnaudos:
 ·   Garantinis fondas:
 
 ·   Visi mokesčiai: 
+
+
+## Printscreen
+
+![duomenu_perziura_large](https://user-images.githubusercontent.com/117721797/216127240-944d48bb-a38f-4212-b667-4bab6cd45dc3.png)
+
