@@ -1,4 +1,4 @@
-# MySQL duomenų peržiūra
+# MySQL CRUD
 
 Naudotos technologijos MySQL + PHP + BOOTSTRAP
 
