@@ -31,13 +31,14 @@ $garantinis=($darbuotojas['salary'] / 100)*0.002;
 <body>
 <div class="container-md">
    <a class="btn btn-success text-decoration-none mt-2" href="javascript:history.go(-1)" title="Grįžti atgal">« Grįžti atgal</a>
+    <a class="btn btn-info mt-2" href="update.php?id=<?= $darbuotojas['id'] ?>">Koreguoti</a>
     <div class="row">
         <div class="col-md-12 mt-2">
             <div class="card">
                 <div class="card-header">
                     <h4>Darbuotojo suvestinė</h4>
                 </div>
-                <div class="card-body">
+                <div class="card-body col-md-12">
                     <table class="table">
                         <tr>
                             <th>Tabelio Nr. (id)</th>

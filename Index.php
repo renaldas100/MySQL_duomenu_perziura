@@ -2,6 +2,11 @@
 
 require_once 'duomenu_baze.php';
 
+if (isset($_GET['delete'])){
+    $stm = $db->prepare("DELETE FROM employees WHERE id=?");
+    $stm->execute([$_GET['delete']]);
+}
+
 $result = $db->query('SELECT * FROM employees');
 $darbuotojai = $result->fetchAll(PDO::FETCH_ASSOC);
 
@@ -28,6 +33,7 @@ $darbuotojai = $result->fetchAll(PDO::FETCH_ASSOC);
                     <h4>Darbuotojų sąrašas</h4>
                 </div>
                 <div class="card-body">
+                    <a href="new.php" class="btn btn-success float-end">Įterpti naują darbuotoją</a>
                     <table class="table">
                         <tr>
                             <th>Vardas</th>
@@ -42,6 +48,8 @@ $darbuotojai = $result->fetchAll(PDO::FETCH_ASSOC);
                                 <td><?= $darbuotojas['education'] ?></td>
                                 <td><?= $darbuotojas['salary']/100 ?></td>
                                 <td><a class="btn btn-success" href="darbuotojas.php?id=<?= $darbuotojas['id'] ?>">Plačiau</a></td>
+                                <td><a class="btn btn-info" href="update.php?id=<?= $darbuotojas['id'] ?>">Koreguoti</a></td>
+                                <td><a class="btn btn-danger" href="index.php?delete=<?= $darbuotojas['id'] ?>">Ištrinti</a></td>
                             </tr>
                         <?php } ?>
                     </table>
