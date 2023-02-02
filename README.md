@@ -31,7 +31,7 @@ Iš atlyginimo suskaičiuotos darbuotojo darbo vietos sąnaudos:
 ·   Visi mokesčiai: 
 
 
-3. Personalo puslapyje padarta, kad darbuotojus galėtų:
+3. Personalo puslapyje padaryta, kad darbuotojus galėtų:
 
 pridėti, koreguoti ir ištrinti.
 
