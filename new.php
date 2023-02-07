@@ -16,6 +16,12 @@ if(isset($_POST['add'])){
     die();
 }
 
+$stm = $db->prepare("SELECT * FROM projects");
+$stm->execute([]);
+$projects=$stm->fetchAll(PDO::FETCH_ASSOC);
+
+
+
 
 ?>
 
@@ -71,6 +77,15 @@ if(isset($_POST['add'])){
                         <div class="mb-3">
                             <label class="form-label">Atlyginimas "ant popieriaus"</label>
                             <input type="text" class="form-control" name="salary">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Priskyrimas projektams:</label><br>
+                            <?php foreach ($projects as $project) { ?>
+                                <input id="<?= $project['id'] ?>" type="checkbox" name="<?= $project['name'] ?>" value="<?= $project['id'] ?>">
+                                <label><?= $project['name'] ?></label> <br>
+                           <?php } ?>
+
+
                         </div>
                         <button class="btn btn-success" name="add" value="1">Pridėti darbuotoją</button>
                     </form>
