@@ -1,4 +1,4 @@
-# MySQL duomenų peržiūra
+# MySQL CRUD
 
 Naudotos technologijos MySQL + PHP + BOOTSTRAP
 
@@ -31,7 +31,12 @@ Iš atlyginimo suskaičiuotos darbuotojo darbo vietos sąnaudos:
 ·   Visi mokesčiai: 
 
 
+3. Personalo puslapyje padaryta, kad darbuotojus galėtų:
+
+pridėti, koreguoti ir ištrinti.
+
+
 ## Printscreen
 
-![duomenu_perziura_large](https://user-images.githubusercontent.com/117721797/216127240-944d48bb-a38f-4212-b667-4bab6cd45dc3.png)
+![CRUD_large](https://user-images.githubusercontent.com/117721797/216336847-26c1cfc9-3ebe-4205-b390-4a39edebcf75.png)
 
